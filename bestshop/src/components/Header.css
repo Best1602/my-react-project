@@ -1,0 +1,143 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #111;
+  }
+  
+.header-con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+.close {
+    cursor: pointer;
+    font-size: 30px;
+}
+.logo-container a {
+    display: flex;
+   
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.menu li {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li a {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #fff;
+}
+.mobile-menu {
+    display: none;
+}
+.popup{
+
+    position: absolute;
+    z-index: 99;
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 100px;
+    margin-left: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.popup-content{
+    /* background-color: #e91914; */
+}
+.close-popup{
+    display: block;
+    position: absolute;
+    font-size: 50px;
+}
+.form-group label{
+    display: block;
+
+}
+.form-group input {
+    width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.form-group button{
+        
+    background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.foem-close button{
+    background-color: #00f89d;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .mobile-menu {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+    }
+    .header {
+        padding: 0 2rem;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 64px;
+        left: -100%;
+        opacity: 0;
+        transition: 0.5s ease;
+       
+    }
+    .menu.active {
+        background: #111;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+        padding-left: 0;
+        align-content: center;
+        transition: 0.5s ease;
+    }
+    .menu li {
+        padding-right: 0 ;
+    }
+    .menu-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+        padding: 10px 0;
+    }
+}

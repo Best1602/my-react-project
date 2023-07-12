@@ -1,0 +1,61 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.cta-bg {
+    background: url("https://images.unsplash.com/photo-1602878714398-b28d40926846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VkFOU3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5)
+}
+.cta-text {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 500px;
+    text-align: center;
+}
+.cta-text h2 {
+    margin: 0;
+}
+.FiCode {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.cta-btn {
+    background: #fff;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.cta-btn:hover {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .cta-text {
+        padding: 0 2rem;
+    }
+}

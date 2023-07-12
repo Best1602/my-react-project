@@ -1,0 +1,143 @@
+.form {
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 17px;
+  background-color: #444444;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #EDEDED;
+}
+.setnameproduct{
+  color:#EDEDED ;
+}
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+.input-container {
+ 
+  margin-bottom: 30px;
+}
+
+.input-container .input {
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #888;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .cut {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #888;
+  pointer-events: none;
+}
+
+.input-container .cut::before {
+ 
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+
+.input-container .cut::after {
+  
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+
+.input-container .placeholder {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container .input:focus + .placeholder,
+.input-container .input:not(:placeholder-shown) + .placeholder {
+  font-size: 12px;
+  top: -10px;
+  color: #888;
+}
+
+.img_product {
+  padding-top: 10px;
+  color:#D5BEA9
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #DA0037;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* .yourBtn{
+  position: relative;
+  top: 150px;
+  font-family: calibri;
+  width: 150px;
+  padding: 10px;
+  border: 1px dashed #BBB;
+  text-align: center;
+  background-color: #DDD;
+  cursor: pointer;
+} */
+
+
+
+.img-input::file-selector-button{
+  font-weight: bold;
+  color: #EDEDED;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+  background-color: #DA0037;
+  border: none;
+}
+
+
+
+/* .submit input[type=file]{
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+    
+} */
+
+.submit:hover {
+  background-color: #E91914;
+}
+
+@media (max-width: 480px) {
+  .form {
+    max-width: 300px;
+  }
+}

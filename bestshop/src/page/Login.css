@@ -1,0 +1,11 @@
+.container{
+    flex: auto;
+    
+}
+.container button{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    
+}
